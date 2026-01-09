@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" contenst="width=device-width, initial-scale=1.0">
+    <title>Automatic E-currency Exchange</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>💱E-Currency Exchange</h2>
+        <input type="number" id="amount" placeholder="Enter amount  "/>
+
+        <div class="dropdowns">
+            <select id="fromCurrency">
+                <option value="USD">USD</option>
+                <option value="INR">INR</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+            </select>
+
+        <span> ➡ </span>
+ 
+            <select id="toCurrency">
+                <option value="INR">INR</option>
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+                <option value="EUR">EUR</option>
+            </select>
+        </div>
+        <button onclick="convertCurrency()">Convert</button>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
